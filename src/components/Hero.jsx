@@ -1,3 +1,4 @@
+import "../styles/Hero.css";
 import heroImg from "../assets/hero.jpg";
 import Embers from "./Embers";
 
