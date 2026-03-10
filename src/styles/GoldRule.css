@@ -1,0 +1,27 @@
+.gold-rule-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.rule-line {
+  height: 1px;
+  width: 120px;
+  background: linear-gradient(to right, transparent, var(--gold-dim));
+}
+
+.rule-line.right {
+  background: linear-gradient(to left, transparent, var(--gold-dim));
+}
+
+.rule-gem {
+  color: var(--gold);
+  font-size: 1rem;
+}
+
+.rule-gem.ember {
+  color: var(--ember);
+  font-size: 0.7rem;
+}
