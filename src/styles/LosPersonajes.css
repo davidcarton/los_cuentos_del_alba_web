@@ -1,0 +1,114 @@
+.personajes {
+  padding: 8rem 2rem;
+  background: linear-gradient(180deg, var(--ink), #120d07, var(--ink));
+  border-top: 1px solid rgba(200, 164, 90, 0.08);
+}
+
+.personajes-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.personajes-header {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.personaje-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.personaje-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.personaje-epiteto {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+.personaje-nombre {
+  font-family: var(--font-title);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  color: var(--gold-bright);
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+
+.personaje-sobriquet {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--ember);
+  margin-bottom: 1.5rem;
+}
+
+.personaje-rule {
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(to right, var(--gold-dim), transparent);
+  margin-bottom: 1.5rem;
+}
+
+.personaje-bio {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: var(--parch);
+}
+
+.personaje-imagen img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  border: 1px solid rgba(200, 164, 90, 0.2);
+  box-shadow:
+    0 0 60px rgba(200, 164, 90, 0.1),
+    0 0 120px rgba(192, 68, 26, 0.1);
+}
+
+@media (max-width: 768px) {
+  .personaje-row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .personaje-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .personaje-rule {
+    margin: 0 auto 1.5rem;
+  }
+
+  .personaje-imagen img {
+    height: 350px;
+  }
+}
+
+@media (min-width: 769px) {
+  .personaje-row-inverso {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .personaje-row-inverso .personaje-imagen {
+    order: 1;
+  }
+
+  .personaje-row-inverso .personaje-text {
+    order: 2;
+  }
+}

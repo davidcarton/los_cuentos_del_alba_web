@@ -45,3 +45,13 @@
 .navbar-links a:hover {
   color: var(--gold);
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+}

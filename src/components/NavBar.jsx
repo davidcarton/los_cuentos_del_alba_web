@@ -17,7 +17,6 @@ function NavBar() {
       <div className="navbar-links">
         <a href="#">El Mundo</a>
         <a href="#">Los Héroes</a>
-        <a href="#">Blog</a>
         <a href="#">Galería</a>
       </div>
     </nav>

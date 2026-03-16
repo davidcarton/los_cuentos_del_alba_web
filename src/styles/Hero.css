@@ -68,7 +68,7 @@
   font-size: 0.7rem;
   letter-spacing: 8px;
   text-transform: uppercase;
-  color: var(--gold-dim);
+  color: var(--gold);
   margin-bottom: 2rem;
 }
 
@@ -228,5 +228,28 @@
   100% {
     transform: translateY(-90vh) translateX(var(--drift)) scale(0.2);
     opacity: 0;
+  }
+}
+@media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-inner {
+    padding: 6rem 1.5rem 3rem;
+  }
+
+  .hero-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text .hero-cta {
+    justify-content: center;
+  }
+
+  .hero-image img {
+    height: 300px;
   }
 }

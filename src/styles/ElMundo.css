@@ -41,9 +41,50 @@
 }
 
 .section-desc {
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   color: var(--parch);
   max-width: 580px;
   margin: 0 auto;
   line-height: 1.85;
+  text-align: justify;
+}
+
+.elmundo-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.elmundo-imagen img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid rgba(200, 164, 90, 0.2);
+  box-shadow:
+    0 0 60px rgba(200, 164, 90, 0.1),
+    0 0 120px rgba(192, 68, 26, 0.1);
+}
+
+.elmundo-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.elmundo-texto .section-desc {
+  max-width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .elmundo-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .elmundo-imagen img {
+    height: 250px;
+  }
 }
