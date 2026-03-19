@@ -1,18 +1,19 @@
-import NavBar from "./components/NavBar";
-import Hero from "./components/Hero";
-import ElMundo from "./components/ElMundo";
-import LosPersonajes from "./components/LosPersonajes";
-import GoldRule from "./components/GoldRule";
-import "./styles/GoldRule.css";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Inicio from "./pages/Inicio";
+import Arkenor from "./pages/Arkenor";
+import Meibel from "./pages/Meibel";
+import Pirocles from "./pages/Pirocles";
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      <Hero />
-      <ElMundo />
-      <LosPersonajes />
-    </div>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/arkenor" element={<Arkenor />} />
+        <Route path="/meibel" element={<Meibel />} />
+        <Route path="/pirocles" element={<Pirocles />} />
+      </Routes>
+    </HashRouter>
   );
 }
 

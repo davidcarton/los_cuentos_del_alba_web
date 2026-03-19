@@ -11,21 +11,55 @@
 
 .personajes-header {
   text-align: center;
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
 }
 
-.personaje-row {
+.personajes-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-  margin-bottom: 6rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
-.personaje-text {
+.personaje-card {
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+  border: 1px solid rgba(200, 164, 90, 0.15);
+  transition: all 0.4s;
+}
+
+.personaje-card img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform 0.5s;
+  filter: brightness(0.6);
+}
+
+.personaje-card:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.4);
+}
+
+.personaje-card:hover {
+  border-color: rgba(200, 164, 90, 0.4);
+  box-shadow: 0 0 40px rgba(200, 164, 90, 0.15);
+}
+
+.personaje-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: linear-gradient(to top, rgba(8, 6, 4, 0.95) 0%, transparent 100%);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
 }
 
 .personaje-epiteto {
@@ -39,7 +73,7 @@
 
 .personaje-nombre {
   font-family: var(--font-title);
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
   color: var(--gold-bright);
   line-height: 1;
   margin-bottom: 0.4rem;
@@ -47,68 +81,26 @@
 
 .personaje-sobriquet {
   font-family: var(--font-ui);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--ember);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .personaje-rule {
-  width: 50px;
-  height: 2px;
-  background: linear-gradient(to right, var(--gold-dim), transparent);
-  margin-bottom: 1.5rem;
-}
-
-.personaje-bio {
-  font-size: 1.1rem;
-  line-height: 1.9;
-  color: var(--parch);
-}
-
-.personaje-imagen img {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-  object-position: top;
-  display: block;
-  border: 1px solid rgba(200, 164, 90, 0.2);
-  box-shadow:
-    0 0 60px rgba(200, 164, 90, 0.1),
-    0 0 120px rgba(192, 68, 26, 0.1);
+  width: 40px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
 }
 
 @media (max-width: 768px) {
-  .personaje-row {
+  .personajes-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
-  .personaje-text {
-    align-items: center;
-    text-align: center;
-  }
-
-  .personaje-rule {
-    margin: 0 auto 1.5rem;
-  }
-
-  .personaje-imagen img {
+  .personaje-card img {
     height: 350px;
-  }
-}
-
-@media (min-width: 769px) {
-  .personaje-row-inverso {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .personaje-row-inverso .personaje-imagen {
-    order: 1;
-  }
-
-  .personaje-row-inverso .personaje-text {
-    order: 2;
   }
 }

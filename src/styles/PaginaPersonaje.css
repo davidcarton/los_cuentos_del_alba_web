@@ -1,0 +1,64 @@
+.pag-personaje {
+  min-height: 100vh;
+  padding: 8rem 2rem 4rem;
+  background:
+    radial-gradient(
+      ellipse 100% 70% at 50% 100%,
+      rgba(192, 68, 26, 0.18) 0%,
+      transparent 65%
+    ),
+    linear-gradient(180deg, #0d0b08 0%, #120d07 60%, #0a0806 100%);
+}
+
+.pag-personaje-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.pag-personaje-imagen img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  border: 1px solid rgba(200, 164, 90, 0.2);
+  box-shadow:
+    0 0 60px rgba(200, 164, 90, 0.1),
+    0 0 120px rgba(192, 68, 26, 0.1);
+}
+
+.pag-personaje-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pag-personaje-nombre {
+  font-family: var(--font-title);
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  color: var(--gold-bright);
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+
+.pag-personaje-bio {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: var(--parch);
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .pag-personaje-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .pag-personaje-imagen img {
+    height: 350px;
+  }
+}

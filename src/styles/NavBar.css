@@ -19,11 +19,12 @@
   backdrop-filter: blur(8px);
 }
 
-.navbar-logo {
+.navbar-logo a {
   font-family: var(--font-title);
   font-size: 1.1rem;
   color: var(--gold);
   letter-spacing: 3px;
+  text-decoration: none;
   text-shadow: 0 0 25px rgba(200, 164, 90, 0.4);
 }
 
@@ -43,7 +44,8 @@
 }
 
 .navbar-links a:hover {
-  color: var(--gold);
+  color: var(--gold-bright);
+  text-shadow: 0 0 15px rgba(200, 164, 90, 0.5);
 }
 
 @media (max-width: 768px) {
