@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
+import GoldRule from "../components/GoldRule";
+import Reveal from "../components/Reveal";
 import meibelImg from "../assets/meibel.jpg";
 import "../styles/PaginaPersonaje.css";
 
@@ -9,14 +11,14 @@ function Meibel() {
       <NavBar />
       <section className="pag-personaje">
         <div className="pag-personaje-inner">
-          <div className="pag-personaje-imagen">
+          <Reveal as="div" className="pag-personaje-imagen ornate-frame">
             <img src={meibelImg} alt="Meibel, Luz Indomita" />
-          </div>
-          <div className="pag-personaje-texto">
+          </Reveal>
+          <Reveal as="div" className="pag-personaje-texto" delay={150}>
             <span className="personaje-epiteto">La Luminaria</span>
             <h1 className="pag-personaje-nombre">Meibel</h1>
             <p className="personaje-sobriquet">Luz Indomita</p>
-            <div className="personaje-rule"></div>
+            <GoldRule compact />
             <p className="pag-personaje-bio">
               Meibel, Luz del Alma, pertenece al pueblo de los Lumien, seres
               nacidos de la luz que Aurion dejó en Terra Oblita. A diferencia de
@@ -38,7 +40,7 @@ function Meibel() {
             >
               ← Volver
             </Link>
-          </div>
+          </Reveal>
         </div>
       </section>
     </div>

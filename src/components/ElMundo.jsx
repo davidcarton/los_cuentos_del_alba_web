@@ -1,15 +1,16 @@
 import "../styles/ElMundo.css";
 import elmundoImg from "../assets/elmundo.jpg";
+import Reveal from "./Reveal";
 
 function ElMundo() {
   return (
-    <section className="elmundo">
+    <section className="elmundo" id="mundo">
       <div className="elmundo-inner">
         <div className="elmundo-content">
-          <div className="elmundo-imagen">
+          <Reveal as="div" className="elmundo-imagen ornate-frame">
             <img src={elmundoImg} alt="Terra Oblita" />
-          </div>
-          <div className="elmundo-texto">
+          </Reveal>
+          <Reveal as="div" className="elmundo-texto" delay={150}>
             <div className="elmundo-header">
               <span className="section-tag">✦ El Mundo ✦</span>
               <h2 className="section-title">Terra Oblita</h2>
@@ -24,7 +25,7 @@ function ElMundo() {
               del Alba, un universo de leyendas, sacrificio y luz frente a la
               oscuridad.
             </p>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>

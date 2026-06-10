@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useSectionNav } from "../hooks/useSectionNav";
 import "../styles/NavBar.css";
 
 function NavBar() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const scrollToSection = useSectionNav();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,17 +20,42 @@ function NavBar() {
     };
   }, []);
 
+  const goToSection = (id) => {
+    setMenuOpen(false);
+    scrollToSection(id);
+  };
+
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-logo">
-        <Link to="/">Los Cuentos del Alba</Link>
+        <Link to="/" onClick={() => setMenuOpen(false)}>
+          Los Cuentos del Alba
+        </Link>
       </div>
       <div className="navbar-links">
         <Link to="/">Inicio</Link>
-        <a href="#mundo">El Mundo</a>
-        <a href="#heroes">Los Héroes</a>
-        <Link to="/galeria">Galería</Link>
+        <button onClick={() => goToSection("mundo")}>El Mundo</button>
+        <button onClick={() => goToSection("heroes")}>Los Héroes</button>
       </div>
+      <button
+        className={`navbar-burger ${menuOpen ? "open" : ""}`}
+        onClick={() => setMenuOpen((open) => !open)}
+        aria-label="Abrir menú"
+        aria-expanded={menuOpen}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      {menuOpen && (
+        <div className="navbar-mobile-menu">
+          <Link to="/" onClick={() => setMenuOpen(false)}>
+            Inicio
+          </Link>
+          <button onClick={() => goToSection("mundo")}>El Mundo</button>
+          <button onClick={() => goToSection("heroes")}>Los Héroes</button>
+        </div>
+      )}
     </nav>
   );
 }

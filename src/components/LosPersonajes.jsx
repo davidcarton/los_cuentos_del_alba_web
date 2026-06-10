@@ -3,21 +3,22 @@ import { Link } from "react-router-dom";
 import arkenorImg from "../assets/arkenor.jpg";
 import meibelImg from "../assets/meibel.jpg";
 import piroclesImg from "../assets/pirocles.jpg";
+import Reveal from "./Reveal";
 
 function LosPersonajes() {
   return (
-    <section className="personajes">
+    <section className="personajes" id="heroes">
       <div className="personajes-inner">
-        <div className="personajes-header">
+        <Reveal as="div" className="personajes-header">
           <span className="section-tag">✦ Los Protagonistas ✦</span>
           <h2 className="section-title">Los Guardianes del Alba</h2>
           <p className="section-desc">
             Tres almas unidas por un destino, cada una con su propia historia
           </p>
-        </div>
+        </Reveal>
 
         <div className="personajes-grid">
-          <Link to="/arkenor" className="personaje-card">
+          <Reveal as={Link} to="/arkenor" className="personaje-card" delay={0}>
             <img src={arkenorImg} alt="Arkenor" />
             <div className="personaje-card-overlay">
               <span className="personaje-epiteto">El Guardián</span>
@@ -25,9 +26,9 @@ function LosPersonajes() {
               <p className="personaje-sobriquet">Escudo del Alba</p>
               <div className="personaje-rule"></div>
             </div>
-          </Link>
+          </Reveal>
 
-          <Link to="/meibel" className="personaje-card">
+          <Reveal as={Link} to="/meibel" className="personaje-card" delay={120}>
             <img src={meibelImg} alt="Meibel" />
             <div className="personaje-card-overlay">
               <span className="personaje-epiteto">La Luminaria</span>
@@ -35,9 +36,9 @@ function LosPersonajes() {
               <p className="personaje-sobriquet">Luz Indomita</p>
               <div className="personaje-rule"></div>
             </div>
-          </Link>
+          </Reveal>
 
-          <Link to="/pirocles" className="personaje-card">
+          <Reveal as={Link} to="/pirocles" className="personaje-card" delay={240}>
             <img src={piroclesImg} alt="Pirocles" />
             <div className="personaje-card-overlay">
               <span className="personaje-epiteto">El Eterno</span>
@@ -45,7 +46,7 @@ function LosPersonajes() {
               <p className="personaje-sobriquet">Llama Eterna</p>
               <div className="personaje-rule"></div>
             </div>
-          </Link>
+          </Reveal>
         </div>
       </div>
     </section>

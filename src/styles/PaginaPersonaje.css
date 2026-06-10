@@ -1,3 +1,5 @@
+@import "./PersonajeIdentidad.css";
+
 .pag-personaje {
   min-height: 100vh;
   padding: 8rem 2rem 4rem;

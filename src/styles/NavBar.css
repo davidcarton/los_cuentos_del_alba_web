@@ -8,14 +8,18 @@
   align-items: center;
   justify-content: space-between;
   padding: 1.2rem 4rem;
+  background: rgba(8, 6, 4, 0.35);
+  border-bottom: 1px solid rgba(200, 164, 90, 0.08);
+  backdrop-filter: blur(6px);
   transition:
     background 0.5s,
-    border-color 0.5s;
+    border-color 0.5s,
+    backdrop-filter 0.5s;
 }
 
 .navbar.scrolled {
   background: rgba(8, 6, 4, 0.97);
-  border-bottom: 1px solid rgba(200, 164, 90, 0.15);
+  border-bottom-color: rgba(200, 164, 90, 0.15);
   backdrop-filter: blur(8px);
 }
 
@@ -33,19 +37,93 @@
   gap: 2.5rem;
 }
 
-.navbar-links a {
+.navbar-links a,
+.navbar-links button {
   font-family: var(--font-ui);
   font-size: 0.7rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--parch-dim);
   text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
   transition: color 0.3s;
 }
 
-.navbar-links a:hover {
+.navbar-links a:hover,
+.navbar-links button:hover {
   color: var(--gold-bright);
   text-shadow: 0 0 15px rgba(200, 164, 90, 0.5);
+}
+
+.navbar-burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.navbar-burger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--gold);
+  transition:
+    transform 0.3s,
+    opacity 0.3s;
+}
+
+.navbar-burger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.navbar-burger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-burger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.navbar-mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  padding: 1.5rem;
+  background: rgba(8, 6, 4, 0.97);
+  border-bottom: 1px solid rgba(200, 164, 90, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+.navbar-mobile-menu a,
+.navbar-mobile-menu button {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--parch-dim);
+  text-decoration: none;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar-mobile-menu a:hover,
+.navbar-mobile-menu button:hover {
+  color: var(--gold-bright);
 }
 
 @media (max-width: 768px) {
@@ -54,6 +132,17 @@
   }
 
   .navbar-links {
+    display: none;
+  }
+
+  .navbar-burger {
+    display: flex;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar-burger,
+  .navbar-mobile-menu {
     display: none;
   }
 }

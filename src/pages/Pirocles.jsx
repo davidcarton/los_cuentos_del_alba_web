@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
+import GoldRule from "../components/GoldRule";
+import Reveal from "../components/Reveal";
 import piroclesImg from "../assets/pirocles.jpg";
 import "../styles/PaginaPersonaje.css";
 
@@ -9,14 +11,14 @@ function Pirocles() {
       <NavBar />
       <section className="pag-personaje">
         <div className="pag-personaje-inner">
-          <div className="pag-personaje-imagen">
+          <Reveal as="div" className="pag-personaje-imagen ornate-frame">
             <img src={piroclesImg} alt="Pirocles, Llama Eterna" />
-          </div>
-          <div className="pag-personaje-texto">
+          </Reveal>
+          <Reveal as="div" className="pag-personaje-texto" delay={150}>
             <span className="personaje-epiteto">El Eterno</span>
             <h1 className="pag-personaje-nombre">Pirocles</h1>
             <p className="personaje-sobriquet">Llama Eterna</p>
-            <div className="personaje-rule"></div>
+            <GoldRule compact />
             <p className="pag-personaje-bio">
               Pirocles, Llama Eterna, es un misterioso viajero cuyo origen nadie
               conoce con certeza. Portador de una antigua magia de fuego y
@@ -39,7 +41,7 @@ function Pirocles() {
             >
               ← Volver
             </Link>
-          </div>
+          </Reveal>
         </div>
       </section>
     </div>

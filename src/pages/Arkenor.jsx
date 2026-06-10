@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
+import GoldRule from "../components/GoldRule";
+import Reveal from "../components/Reveal";
 import arkenorImg from "../assets/arkenor.jpg";
 import "../styles/PaginaPersonaje.css";
 
@@ -9,14 +11,14 @@ function Arkenor() {
       <NavBar />
       <section className="pag-personaje">
         <div className="pag-personaje-inner">
-          <div className="pag-personaje-imagen">
+          <Reveal as="div" className="pag-personaje-imagen ornate-frame">
             <img src={arkenorImg} alt="Arkenor, Escudo del Alba" />
-          </div>
-          <div className="pag-personaje-texto">
+          </Reveal>
+          <Reveal as="div" className="pag-personaje-texto" delay={150}>
             <span className="personaje-epiteto">El Guardián</span>
             <h1 className="pag-personaje-nombre">Arkenor</h1>
             <p className="personaje-sobriquet">Escudo del Alba</p>
-            <div className="personaje-rule"></div>
+            <GoldRule compact />
             <p className="pag-personaje-bio">
               Arkenor, Escudo del Alba, es un caballero nacido entre los pueblos
               del Norte de Terra Oblita. Superviviente de la caída de Rígvorn,
@@ -39,7 +41,7 @@ function Arkenor() {
             >
               ← Volver
             </Link>
-          </div>
+          </Reveal>
         </div>
       </section>
     </div>

@@ -28,3 +28,53 @@ body::before {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
   opacity: 0.035;
 }
+
+/* Revelado en cascada al hacer scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transition: none;
+  }
+}
+
+/* Marco ornamental dorado para imágenes destacadas */
+.ornate-frame {
+  position: relative;
+}
+
+.ornate-frame::before,
+.ornate-frame::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border: 2px solid var(--gold);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.ornate-frame::before {
+  top: -2px;
+  left: -2px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.ornate-frame::after {
+  bottom: -2px;
+  right: -2px;
+  border-left: none;
+  border-top: none;
+}

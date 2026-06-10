@@ -133,7 +133,7 @@
   border: none;
   cursor: pointer;
   transition: all 0.3s;
-  clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+  clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%);
 }
 
 .btn-gold {

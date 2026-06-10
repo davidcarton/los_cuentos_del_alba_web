@@ -1,3 +1,5 @@
+@import "./PersonajeIdentidad.css";
+
 .personajes {
   padding: 8rem 2rem;
   background: linear-gradient(180deg, var(--ink), #120d07, var(--ink));
@@ -62,36 +64,12 @@
   text-align: center;
 }
 
-.personaje-epiteto {
-  font-family: var(--font-ui);
-  font-size: 0.65rem;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 0.5rem;
-}
-
 .personaje-nombre {
   font-family: var(--font-title);
   font-size: clamp(1.8rem, 3vw, 2.8rem);
   color: var(--gold-bright);
   line-height: 1;
   margin-bottom: 0.4rem;
-}
-
-.personaje-sobriquet {
-  font-family: var(--font-ui);
-  font-size: 0.7rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--ember);
-  margin-bottom: 0.8rem;
-}
-
-.personaje-rule {
-  width: 40px;
-  height: 1px;
-  background: linear-gradient(to right, transparent, var(--gold), transparent);
 }
 
 @media (max-width: 768px) {
