@@ -3,7 +3,10 @@ import { useLocation, useNavigate } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
 import ElMundo from "../components/ElMundo";
+import Codice from "../components/Codice";
 import LosPersonajes from "../components/LosPersonajes";
+import BoletinAlba from "../components/BoletinAlba";
+import Footer from "../components/Footer";
 import GoldRule from "../components/GoldRule";
 
 function Inicio() {
@@ -25,7 +28,11 @@ function Inicio() {
       <GoldRule />
       <ElMundo />
       <GoldRule />
+      <Codice />
+      <GoldRule />
       <LosPersonajes />
+      <BoletinAlba />
+      <Footer />
     </div>
   );
 }

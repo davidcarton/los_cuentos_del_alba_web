@@ -58,6 +58,23 @@
   text-shadow: 0 0 15px rgba(200, 164, 90, 0.5);
 }
 
+.navbar-links .navbar-cta {
+  color: var(--gold);
+  border: 1px solid rgba(200, 164, 90, 0.35);
+  padding: 0.5rem 1.1rem;
+  transition:
+    color 0.3s,
+    border-color 0.3s,
+    background 0.3s;
+}
+
+.navbar-links .navbar-cta:hover {
+  color: var(--gold-bright);
+  border-color: var(--gold);
+  background: rgba(200, 164, 90, 0.08);
+  text-shadow: none;
+}
+
 .navbar-burger {
   display: none;
   flex-direction: column;

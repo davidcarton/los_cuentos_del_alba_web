@@ -72,6 +72,25 @@
   margin-bottom: 0.4rem;
 }
 
+.personaje-teaser {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--parch-dim);
+  margin-top: 1rem;
+  max-width: 260px;
+  opacity: 0;
+  transform: translateY(6px);
+  transition:
+    opacity 0.4s,
+    transform 0.4s;
+}
+
+.personaje-card:hover .personaje-teaser {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 768px) {
   .personajes-grid {
     grid-template-columns: 1fr;

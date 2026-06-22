@@ -1,0 +1,138 @@
+.codice {
+  padding: 8rem 2rem;
+  background:
+    radial-gradient(
+      ellipse 90% 50% at 80% 20%,
+      rgba(192, 68, 26, 0.05) 0%,
+      transparent 60%
+    ),
+    linear-gradient(180deg, var(--ink), #120d07, var(--ink));
+  border-top: 1px solid rgba(200, 164, 90, 0.08);
+}
+
+.codice-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.codice-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.codice-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 3.5rem;
+}
+
+.codice-tab {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--parch-dim);
+  background: rgba(20, 16, 11, 0.4);
+  border: 1px solid rgba(200, 164, 90, 0.15);
+  padding: 0.8rem 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.codice-tab-runa {
+  color: var(--ember);
+  font-size: 0.9rem;
+}
+
+.codice-tab:hover {
+  color: var(--gold-bright);
+  border-color: rgba(200, 164, 90, 0.35);
+}
+
+.codice-tab.activo {
+  color: var(--ink);
+  background: linear-gradient(135deg, #c8a45a, #8b6820);
+  border-color: transparent;
+  box-shadow: 0 4px 30px rgba(200, 164, 90, 0.25);
+}
+
+.codice-tab.activo .codice-tab-runa {
+  color: var(--ink);
+}
+
+.codice-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.codice-entrada {
+  padding: 2.2rem 2rem;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.codice-entrada-epigrafe {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--ember);
+  margin-bottom: 0.9rem;
+}
+
+.codice-entrada-titulo {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  color: var(--gold-bright);
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.codice-entrada-texto {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--parch);
+}
+
+.codice-runas {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.4rem;
+  padding: 0;
+}
+
+.codice-runas li {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  color: var(--gold);
+  border: 1px solid rgba(200, 164, 90, 0.25);
+  padding: 0.35rem 0.7rem;
+}
+
+@media (max-width: 900px) {
+  .codice-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .codice {
+    padding: 6rem 1.2rem;
+  }
+
+  .codice-tab {
+    font-size: 0.62rem;
+    padding: 0.7rem 1.1rem;
+  }
+}

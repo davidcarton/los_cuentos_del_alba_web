@@ -35,7 +35,11 @@ function NavBar() {
       <div className="navbar-links">
         <Link to="/">Inicio</Link>
         <button onClick={() => goToSection("mundo")}>El Mundo</button>
+        <button onClick={() => goToSection("codice")}>El Códice</button>
         <button onClick={() => goToSection("heroes")}>Los Héroes</button>
+        <button className="navbar-cta" onClick={() => goToSection("vigilia")}>
+          Únete al Alba
+        </button>
       </div>
       <button
         className={`navbar-burger ${menuOpen ? "open" : ""}`}
@@ -53,7 +57,11 @@ function NavBar() {
             Inicio
           </Link>
           <button onClick={() => goToSection("mundo")}>El Mundo</button>
+          <button onClick={() => goToSection("codice")}>El Códice</button>
           <button onClick={() => goToSection("heroes")}>Los Héroes</button>
+          <button className="navbar-cta" onClick={() => goToSection("vigilia")}>
+            Únete al Alba
+          </button>
         </div>
       )}
     </nav>

@@ -1,0 +1,35 @@
+.not-found {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 2rem 4rem;
+  text-align: center;
+  background:
+    radial-gradient(
+      ellipse 100% 70% at 50% 100%,
+      rgba(192, 68, 26, 0.14) 0%,
+      transparent 65%
+    ),
+    linear-gradient(180deg, #0d0b08 0%, #120d07 60%, #0a0806 100%);
+}
+
+.not-found-inner {
+  max-width: 520px;
+}
+
+.not-found-titulo {
+  font-family: var(--font-title);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: var(--gold-bright);
+  line-height: 1.2;
+  margin-top: 0.6rem;
+  text-shadow: 0 0 50px rgba(200, 164, 90, 0.2);
+}
+
+.not-found-texto {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--parch);
+  margin: 1.6rem 0 2.4rem;
+}

@@ -25,6 +25,9 @@ function LosPersonajes() {
               <h3 className="personaje-nombre">Arkenor</h3>
               <p className="personaje-sobriquet">Escudo del Alba</p>
               <div className="personaje-rule"></div>
+              <p className="personaje-teaser">
+                El único que recuerda cómo ardió Rígvorn
+              </p>
             </div>
           </Reveal>
 
@@ -33,8 +36,11 @@ function LosPersonajes() {
             <div className="personaje-card-overlay">
               <span className="personaje-epiteto">La Luminaria</span>
               <h3 className="personaje-nombre">Meibel</h3>
-              <p className="personaje-sobriquet">Luz Indomita</p>
+              <p className="personaje-sobriquet">Luz Indómita</p>
               <div className="personaje-rule"></div>
+              <p className="personaje-teaser">
+                Abandonó Aeloria por un camino que no estaba escrito
+              </p>
             </div>
           </Reveal>
 
@@ -45,6 +51,9 @@ function LosPersonajes() {
               <h3 className="personaje-nombre">Pirocles</h3>
               <p className="personaje-sobriquet">Llama Eterna</p>
               <div className="personaje-rule"></div>
+              <p className="personaje-teaser">
+                Ante él, hasta los Lumien inclinan la cabeza sin saber por qué
+              </p>
             </div>
           </Reveal>
         </div>

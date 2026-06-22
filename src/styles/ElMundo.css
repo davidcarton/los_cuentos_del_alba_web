@@ -78,6 +78,37 @@
   margin: 0;
 }
 
+.elmundo-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding-top: 2.2rem;
+  border-top: 1px solid rgba(200, 164, 90, 0.12);
+}
+
+.elmundo-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.elmundo-stat-num {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  color: var(--gold-bright);
+  line-height: 1;
+}
+
+.elmundo-stat-label {
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  color: var(--parch-dim);
+  text-transform: none;
+}
+
 @media (max-width: 768px) {
   .elmundo-content {
     grid-template-columns: 1fr;
@@ -86,5 +117,10 @@
 
   .elmundo-imagen img {
     height: 250px;
+  }
+
+  .elmundo-stats {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
   }
 }

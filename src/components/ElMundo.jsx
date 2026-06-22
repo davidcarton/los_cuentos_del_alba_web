@@ -25,6 +25,20 @@ function ElMundo() {
               del Alba, un universo de leyendas, sacrificio y luz frente a la
               oscuridad.
             </p>
+            <div className="elmundo-stats">
+              <div className="elmundo-stat">
+                <span className="elmundo-stat-num">VII</span>
+                <span className="elmundo-stat-label">Aurelin, luces primordiales</span>
+              </div>
+              <div className="elmundo-stat">
+                <span className="elmundo-stat-num">II</span>
+                <span className="elmundo-stat-label">Razas antiguas: Lumien y Sacrum</span>
+              </div>
+              <div className="elmundo-stat">
+                <span className="elmundo-stat-num">∞</span>
+                <span className="elmundo-stat-label">Pueblos del Norte, Centro y Sur</span>
+              </div>
+            </div>
           </Reveal>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import "../styles/Hero.css";
 import heroImg from "../assets/hero.jpg";
 import Embers from "./Embers";
+import LeyLines from "./LeyLines";
 import Reveal from "./Reveal";
 import { useSectionNav } from "../hooks/useSectionNav";
 
@@ -9,6 +10,7 @@ function Hero() {
 
   return (
     <section className="hero">
+      <LeyLines />
       <Embers />
       <div className="hero-ray" />
       <div className="hero-inner">

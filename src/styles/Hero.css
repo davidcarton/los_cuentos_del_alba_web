@@ -199,11 +199,63 @@
   }
 }
 
+.ley-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.ley-line {
+  stroke: var(--gold);
+  stroke-width: 0.6;
+  opacity: 0;
+  animation: leyLinePulse 7s ease-in-out infinite;
+}
+
+.ley-node {
+  fill: var(--gold-bright);
+  opacity: 0;
+  animation: leyNodePulse 7s ease-in-out infinite;
+}
+
+@keyframes leyLinePulse {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.22;
+  }
+}
+
+@keyframes leyNodePulse {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ley-line,
+  .ley-node {
+    animation: none;
+    opacity: 0.1;
+  }
+}
+
 .embers {
   position: absolute;
   inset: 0;
   pointer-events: none;
   overflow: hidden;
+  z-index: 1;
 }
 
 .ember-p {

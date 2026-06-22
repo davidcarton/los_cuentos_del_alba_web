@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import GoldRule from "../components/GoldRule";
 import Reveal from "../components/Reveal";
+import Footer from "../components/Footer";
 import meibelImg from "../assets/meibel.jpg";
 import "../styles/PaginaPersonaje.css";
 
@@ -12,22 +13,25 @@ function Meibel() {
       <section className="pag-personaje">
         <div className="pag-personaje-inner">
           <Reveal as="div" className="pag-personaje-imagen ornate-frame">
-            <img src={meibelImg} alt="Meibel, Luz Indomita" />
+            <img src={meibelImg} alt="Meibel, Luz Indómita" />
           </Reveal>
           <Reveal as="div" className="pag-personaje-texto" delay={150}>
             <span className="personaje-epiteto">La Luminaria</span>
             <h1 className="pag-personaje-nombre">Meibel</h1>
-            <p className="personaje-sobriquet">Luz Indomita</p>
+            <p className="personaje-sobriquet">Luz Indómita</p>
             <GoldRule compact />
+            <p className="personaje-datos">Lumien · Aeloria · Luminaria</p>
             <p className="pag-personaje-bio">
-              Meibel, Luz del Alma, pertenece al pueblo de los Lumien, seres
-              nacidos de la luz que Aurion dejó en Terra Oblita. A diferencia de
-              muchos de los suyos, su fuerza no reside en el brillo de su poder,
-              sino en la profundidad de su compasión. Elegida como Luminaria, su
-              don es sanar, proteger y mantener viva la esperanza incluso cuando
-              la oscuridad se extiende. Su destino cambiará cuando sus pasos se
-              crucen con los de Arkenor, descubriendo que la verdadera luz no
-              solo cura… también guía.
+              Meibel pertenece a los Lumien, una de las razas antiguas de
+              Terra Oblita, cuyas ciudades viven ocultas en ningún mapa
+              conocido. Desciende de Leibel, cofundadora de los Guardaclaros y
+              la primera persona conocida capaz de seguir las cuatro Sendas
+              Lumien a la vez. A diferencia de muchos de los suyos, la fuerza
+              de Meibel no reside en el brillo, sino en la profundidad: sana
+              despacio, pero sana hondo. Elegida Luminaria, su don es sostener
+              la luz junto a la oscuridad hasta que esta no sabe qué hacer.
+              Abandonó Aeloria para caminar fuera de los territorios Lumien,
+              algo que pocos de su pueblo llegan a hacer.
             </p>
             <Link
               to="/"
@@ -43,6 +47,7 @@ function Meibel() {
           </Reveal>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

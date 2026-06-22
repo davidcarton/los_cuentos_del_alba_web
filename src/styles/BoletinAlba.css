@@ -1,0 +1,111 @@
+.boletin {
+  padding: 7rem 2rem;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, var(--ink), #120d07, var(--ink));
+}
+
+.boletin-reveal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.boletin-card {
+  width: 100%;
+  max-width: 640px;
+  padding: 3.5rem 3rem;
+  text-align: center;
+  box-shadow:
+    inset 0 1px 0 rgba(242, 217, 138, 0.06),
+    0 0 80px rgba(192, 68, 26, 0.06);
+}
+
+.boletin-titulo {
+  font-family: var(--font-title);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  color: var(--gold-bright);
+  line-height: 1.15;
+  margin: 0.6rem 0 1.4rem;
+  text-shadow: 0 0 50px rgba(200, 164, 90, 0.2);
+}
+
+.boletin-desc {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--parch);
+  max-width: 480px;
+  margin: 0 auto 2.2rem;
+}
+
+.boletin-form {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.boletin-input {
+  flex: 1;
+  min-width: 220px;
+  max-width: 320px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--parch);
+  background: rgba(8, 6, 4, 0.6);
+  border: 1px solid rgba(200, 164, 90, 0.25);
+  padding: 0.9rem 1.2rem;
+  transition: border-color 0.3s;
+}
+
+.boletin-input::placeholder {
+  color: var(--parch-dim);
+  opacity: 0.6;
+}
+
+.boletin-input:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.boletin-input[aria-invalid="true"] {
+  border-color: var(--ember);
+}
+
+.boletin-mensaje {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  line-height: 1.7;
+  margin-top: 1rem;
+}
+
+.boletin-mensaje.exito {
+  color: var(--gold-bright);
+}
+
+.boletin-mensaje.error {
+  color: var(--ember);
+}
+
+.boletin-privacidad {
+  font-size: 0.72rem;
+  letter-spacing: 0.3px;
+  color: var(--parch-dim);
+  margin-top: 1.6rem;
+}
+
+@media (max-width: 768px) {
+  .boletin-card {
+    padding: 2.6rem 1.6rem;
+  }
+
+  .boletin-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .boletin-input {
+    max-width: none;
+  }
+}
