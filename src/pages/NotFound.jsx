@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import GoldRule from "../components/GoldRule";
 import Reveal from "../components/Reveal";
+import SectionTag from "../components/SectionTag";
 import "../styles/NotFound.css";
 
 function NotFound() {
@@ -10,7 +11,7 @@ function NotFound() {
       <NavBar />
       <section className="not-found">
         <Reveal as="div" className="not-found-inner">
-          <span className="section-tag">✦ Sendero perdido ✦</span>
+          <SectionTag>Sendero perdido</SectionTag>
           <h1 className="not-found-titulo">La bruma cubre este camino</h1>
           <GoldRule compact />
           <p className="not-found-texto">

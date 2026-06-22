@@ -4,13 +4,14 @@ import arkenorImg from "../assets/arkenor.jpg";
 import meibelImg from "../assets/meibel.jpg";
 import piroclesImg from "../assets/pirocles.jpg";
 import Reveal from "./Reveal";
+import SectionTag from "./SectionTag";
 
 function LosPersonajes() {
   return (
     <section className="personajes" id="heroes">
       <div className="personajes-inner">
         <Reveal as="div" className="personajes-header">
-          <span className="section-tag">✦ Los Protagonistas ✦</span>
+          <SectionTag>Los Protagonistas</SectionTag>
           <h2 className="section-title">Los Guardianes del Alba</h2>
           <p className="section-desc">
             Tres almas unidas por un destino, cada una con su propia historia

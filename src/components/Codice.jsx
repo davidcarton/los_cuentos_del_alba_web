@@ -1,13 +1,15 @@
 import { useState } from "react";
 import "../styles/Codice.css";
 import Reveal from "./Reveal";
+import SectionTag from "./SectionTag";
+import { IconStar, IconDiamond, IconSwords, IconSeal } from "./Icons";
 import { useSpotlight } from "../hooks/useSpotlight";
 
 const CAPITULOS = [
   {
     id: "luz",
     nombre: "La Luz",
-    runa: "✦",
+    icono: IconStar,
     entradas: [
       {
         titulo: "Aurion",
@@ -33,7 +35,7 @@ const CAPITULOS = [
   {
     id: "sombra",
     nombre: "La Sombra",
-    runa: "◈",
+    icono: IconDiamond,
     entradas: [
       {
         titulo: "Umbren",
@@ -58,7 +60,7 @@ const CAPITULOS = [
   {
     id: "pueblos",
     nombre: "Los Pueblos",
-    runa: "⚔",
+    icono: IconSwords,
     entradas: [
       {
         titulo: "El Norte",
@@ -83,7 +85,7 @@ const CAPITULOS = [
   {
     id: "razas",
     nombre: "Razas Antiguas",
-    runa: "❖",
+    icono: IconSeal,
     entradas: [
       {
         titulo: "Los Lumien",
@@ -138,7 +140,7 @@ function Codice() {
     <section className="codice" id="codice">
       <div className="codice-inner">
         <Reveal as="div" className="codice-header">
-          <span className="section-tag">✦ El Códice ✦</span>
+          <SectionTag>El Códice</SectionTag>
           <h2 className="section-title">Códice de Terra Oblita</h2>
           <p className="section-desc">
             Fragmentos del canon que se transmite entre quienes aún recuerdan
@@ -154,7 +156,7 @@ function Codice() {
               onClick={() => setActivo(cap.id)}
               aria-pressed={activo === cap.id}
             >
-              <span className="codice-tab-runa">{cap.runa}</span>
+              <cap.icono className="codice-tab-runa" />
               {cap.nombre}
             </button>
           ))}

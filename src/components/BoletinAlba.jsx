@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../styles/BoletinAlba.css";
 import Reveal from "./Reveal";
+import SectionTag from "./SectionTag";
 import { useSpotlight } from "../hooks/useSpotlight";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -37,7 +38,7 @@ function BoletinAlba() {
           onMouseMove={onMouseMove}
           className="boletin-card spotlight-card"
         >
-          <span className="section-tag">✦ La Vigilia ✦</span>
+          <SectionTag>La Vigilia</SectionTag>
           <h2 className="boletin-titulo">
             Cuando llegue el Alba,
             <br />

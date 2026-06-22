@@ -49,6 +49,17 @@ body::before {
   }
 }
 
+/* Iconos rúnicos vectoriales (sustituyen a los glifos Unicode, que el
+   navegador renderiza con la fuente de emoji del sistema en vez de con la
+   tipografía de la web) */
+.icon-rune {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: -0.125em;
+  flex-shrink: 0;
+}
+
 /* Marco ornamental dorado para imágenes destacadas */
 .ornate-frame {
   position: relative;

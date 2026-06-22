@@ -1,6 +1,7 @@
 import "../styles/ElMundo.css";
 import elmundoImg from "../assets/elmundo.jpg";
 import Reveal from "./Reveal";
+import SectionTag from "./SectionTag";
 
 function ElMundo() {
   return (
@@ -12,7 +13,7 @@ function ElMundo() {
           </Reveal>
           <Reveal as="div" className="elmundo-texto" delay={150}>
             <div className="elmundo-header">
-              <span className="section-tag">✦ El Mundo ✦</span>
+              <SectionTag>El Mundo</SectionTag>
               <h2 className="section-title">Terra Oblita</h2>
             </div>
             <p className="section-desc">
