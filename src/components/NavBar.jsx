@@ -1,12 +1,10 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { useSectionNav } from "../hooks/useSectionNav";
 import "../styles/NavBar.css";
 
 function NavBar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const scrollToSection = useSectionNav();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,26 +18,23 @@ function NavBar() {
     };
   }, []);
 
-  const goToSection = (id) => {
-    setMenuOpen(false);
-    scrollToSection(id);
-  };
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-logo">
-        <Link to="/" onClick={() => setMenuOpen(false)}>
+        <Link to="/" onClick={closeMenu}>
           Los Cuentos del Alba
         </Link>
       </div>
       <div className="navbar-links">
         <Link to="/">Inicio</Link>
-        <button onClick={() => goToSection("mundo")}>El Mundo</button>
-        <button onClick={() => goToSection("codice")}>El Códice</button>
-        <button onClick={() => goToSection("heroes")}>Los Héroes</button>
-        <button className="navbar-cta" onClick={() => goToSection("vigilia")}>
+        <Link to="/mundo">El Mundo</Link>
+        <Link to="/codice">El Códice</Link>
+        <Link to="/heroes">Los Héroes</Link>
+        <Link to="/vigilia" className="navbar-cta">
           Únete al Alba
-        </button>
+        </Link>
       </div>
       <button
         className={`navbar-burger ${menuOpen ? "open" : ""}`}
@@ -53,15 +48,21 @@ function NavBar() {
       </button>
       {menuOpen && (
         <div className="navbar-mobile-menu">
-          <Link to="/" onClick={() => setMenuOpen(false)}>
+          <Link to="/" onClick={closeMenu}>
             Inicio
           </Link>
-          <button onClick={() => goToSection("mundo")}>El Mundo</button>
-          <button onClick={() => goToSection("codice")}>El Códice</button>
-          <button onClick={() => goToSection("heroes")}>Los Héroes</button>
-          <button className="navbar-cta" onClick={() => goToSection("vigilia")}>
+          <Link to="/mundo" onClick={closeMenu}>
+            El Mundo
+          </Link>
+          <Link to="/codice" onClick={closeMenu}>
+            El Códice
+          </Link>
+          <Link to="/heroes" onClick={closeMenu}>
+            Los Héroes
+          </Link>
+          <Link to="/vigilia" className="navbar-cta" onClick={closeMenu}>
             Únete al Alba
-          </button>
+          </Link>
         </div>
       )}
     </nav>

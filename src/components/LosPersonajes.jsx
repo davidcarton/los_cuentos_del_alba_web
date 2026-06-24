@@ -19,7 +19,7 @@ function LosPersonajes() {
         </Reveal>
 
         <div className="personajes-grid">
-          <Reveal as={Link} to="/arkenor" className="personaje-card" delay={0}>
+          <Reveal as={Link} to="/heroes/arkenor" className="personaje-card" delay={0}>
             <img src={arkenorImg} alt="Arkenor" />
             <div className="personaje-card-overlay">
               <span className="personaje-epiteto">El Guardián</span>
@@ -32,7 +32,7 @@ function LosPersonajes() {
             </div>
           </Reveal>
 
-          <Reveal as={Link} to="/meibel" className="personaje-card" delay={120}>
+          <Reveal as={Link} to="/heroes/meibel" className="personaje-card" delay={120}>
             <img src={meibelImg} alt="Meibel" />
             <div className="personaje-card-overlay">
               <span className="personaje-epiteto">La Luminaria</span>
@@ -45,7 +45,7 @@ function LosPersonajes() {
             </div>
           </Reveal>
 
-          <Reveal as={Link} to="/pirocles" className="personaje-card" delay={240}>
+          <Reveal as={Link} to="/heroes/pirocles" className="personaje-card" delay={240}>
             <img src={piroclesImg} alt="Pirocles" />
             <div className="personaje-card-overlay">
               <span className="personaje-epiteto">El Eterno</span>

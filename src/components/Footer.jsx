@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
-import { useSectionNav } from "../hooks/useSectionNav";
 import "../styles/Footer.css";
 
 function Footer() {
-  const scrollToSection = useSectionNav();
   const año = new Date().getFullYear();
 
   return (
@@ -20,16 +18,10 @@ function Footer() {
 
           <nav className="footer-nav" aria-label="Navegación del pie de página">
             <Link to="/">Inicio</Link>
-            <button onClick={() => scrollToSection("mundo")}>El Mundo</button>
-            <button onClick={() => scrollToSection("codice")}>
-              El Códice
-            </button>
-            <button onClick={() => scrollToSection("heroes")}>
-              Los Héroes
-            </button>
-            <button onClick={() => scrollToSection("vigilia")}>
-              La Vigilia
-            </button>
+            <Link to="/mundo">El Mundo</Link>
+            <Link to="/codice">El Códice</Link>
+            <Link to="/heroes">Los Héroes</Link>
+            <Link to="/vigilia">La Vigilia</Link>
           </nav>
         </div>
 

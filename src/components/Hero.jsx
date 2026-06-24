@@ -1,13 +1,11 @@
 import "../styles/Hero.css";
 import heroImg from "../assets/hero.jpg";
+import { Link } from "react-router-dom";
 import Embers from "./Embers";
 import LeyLines from "./LeyLines";
 import Reveal from "./Reveal";
-import { useSectionNav } from "../hooks/useSectionNav";
 
 function Hero() {
-  const scrollToSection = useSectionNav();
-
   return (
     <section className="hero">
       <LeyLines />
@@ -44,18 +42,12 @@ function Hero() {
               incluso en la sombra más profunda.
             </Reveal>
             <Reveal className="hero-cta" delay={540}>
-              <button
-                className="btn btn-gold"
-                onClick={() => scrollToSection("mundo")}
-              >
+              <Link to="/mundo" className="btn btn-gold">
                 Descubre el Mundo
-              </button>
-              <button
-                className="btn btn-ghost"
-                onClick={() => scrollToSection("heroes")}
-              >
+              </Link>
+              <Link to="/heroes" className="btn btn-ghost">
                 Conoce a los Guardianes
-              </button>
+              </Link>
             </Reveal>
           </div>
           <Reveal
