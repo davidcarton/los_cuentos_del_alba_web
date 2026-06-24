@@ -1,0 +1,41 @@
+.embers-transition {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.ember-transition-p {
+  position: absolute;
+  border-radius: 65%;
+  background: radial-gradient(circle, #f2d98a, #c0441a);
+  animation-name: riseEmberFast;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes riseEmberFast {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.6);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateY(-120px) translateX(var(--drift)) scale(0.25);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ember-transition-p {
+    animation: none;
+    opacity: 0;
+  }
+}
