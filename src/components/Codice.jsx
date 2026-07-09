@@ -22,7 +22,6 @@ const CAPITULOS = [
         epigrafe: "Luces primordiales",
         texto:
           "Liriën, Serad, Vaelor, Elarin, Anarith y Caelia reflejan distintos aspectos de la Luz: misericordia, coraje, verdad, sabiduría, esperanza, creación. No se les ve. Se les siente.",
-        runas: ["Liriën", "Serad", "Vaelor", "Elarin", "Anarith", "Caelia"],
       },
       {
         titulo: "Los Ilumir",
@@ -44,10 +43,10 @@ const CAPITULOS = [
           "Era el Anhelo. Amó el mundo con una fuerza que no se distinguía de la devoción, hasta que deseó ser la fuente en lugar del río. No fue un instante. Fue un proceso lento, como se tuerce todo lo que tarda en romperse.",
       },
       {
-        titulo: "El Umbral",
-        epigrafe: "El hilo que sostiene el mundo",
+        titulo: "Criaturas de la Sombra",
+        epigrafe: "Lo que nace de las grietas",
         texto:
-          "Une a Aurion con todo lo que vive: hombres, razas antiguas, animales, bosques, ríos. Cuando se daña, el daño se extiende — y no siempre del todo se cura.",
+          "No todas tienen nombre. Se filtran por las grietas abiertas y toman la forma del miedo de quien las invoca sin saberlo. Cazan con paciencia, atraídas por la desesperación como la polilla por la llama.",
       },
       {
         titulo: "Las Grietas",
@@ -84,9 +83,15 @@ const CAPITULOS = [
   },
   {
     id: "razas",
-    nombre: "Razas Antiguas",
+    nombre: "Razas",
     icono: IconSeal,
     entradas: [
+      {
+        titulo: "Los Hombres",
+        epigrafe: "La raza mortal, la más numerosa",
+        texto:
+          "Nacen, envejecen y mueren en un abrir y cerrar de ojos comparado con Lumien y Sacrum. Esa brevedad los empuja a construir, amar y luchar con una urgencia que las otras razas ya olvidaron.",
+      },
       {
         titulo: "Los Lumien",
         epigrafe: "Piel plateada, ciudades sin nombre en ningún mapa",
@@ -98,12 +103,6 @@ const CAPITULOS = [
         epigrafe: "El Llamado",
         texto:
           "No eligen su camino. Son llamados a él, a veces en la infancia, a veces nunca. Quien acepta plenamente su llamado recibe un bastón — no como autoridad, sino como responsabilidad tallada en madera.",
-      },
-      {
-        titulo: "El Umbral y sus guardianes",
-        epigrafe: "Cuatro Sendas",
-        texto:
-          "Guardianes del Umbral, Custodios del Eco, Vigías de Ceniza, Voces del Llamado. Cada Senda no se elige. Se descubre, como quien por fin reconoce su propio nombre.",
       },
     ],
   },
@@ -121,13 +120,6 @@ function EntradaCard({ entrada }) {
       <span className="codice-entrada-epigrafe">{entrada.epigrafe}</span>
       <h3 className="codice-entrada-titulo">{entrada.titulo}</h3>
       <p className="codice-entrada-texto">{entrada.texto}</p>
-      {entrada.runas && (
-        <ul className="codice-runas">
-          {entrada.runas.map((runa) => (
-            <li key={runa}>{runa}</li>
-          ))}
-        </ul>
-      )}
     </div>
   );
 }

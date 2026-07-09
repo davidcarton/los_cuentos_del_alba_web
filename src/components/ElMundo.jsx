@@ -32,8 +32,8 @@ function ElMundo() {
                 <span className="elmundo-stat-label">Aurelin, luces primordiales</span>
               </div>
               <div className="elmundo-stat">
-                <span className="elmundo-stat-num">II</span>
-                <span className="elmundo-stat-label">Razas antiguas: Lumien y Sacrum</span>
+                <span className="elmundo-stat-num">III</span>
+                <span className="elmundo-stat-label">Razas: Hombres, Lumien y Sacrum</span>
               </div>
               <div className="elmundo-stat">
                 <span className="elmundo-stat-num">∞</span>

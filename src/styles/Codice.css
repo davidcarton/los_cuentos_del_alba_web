@@ -106,24 +106,6 @@
   color: var(--parch);
 }
 
-.codice-runas {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1.4rem;
-  padding: 0;
-}
-
-.codice-runas li {
-  font-family: var(--font-ui);
-  font-size: 0.65rem;
-  letter-spacing: 1px;
-  color: var(--gold);
-  border: 1px solid rgba(200, 164, 90, 0.25);
-  padding: 0.35rem 0.7rem;
-}
-
 @media (max-width: 900px) {
   .codice-grid {
     grid-template-columns: 1fr;
