@@ -1,0 +1,162 @@
+{
+  "eslint.config.js": {
+    "mtime": 1772268301.2394252,
+    "ast_hash": "49c8473bcfcec3aef596a5fb04a6df06",
+    "semantic_hash": "49c8473bcfcec3aef596a5fb04a6df06"
+  },
+  "package.json": {
+    "mtime": 1782287971.383659,
+    "ast_hash": "0e621970f867fc23d1d8058357fbbb33",
+    "semantic_hash": "0e621970f867fc23d1d8058357fbbb33"
+  },
+  "src/App.jsx": {
+    "mtime": 1782285506.70928,
+    "ast_hash": "d76a77f68d47d8b68e317c4b81878ea2",
+    "semantic_hash": "d76a77f68d47d8b68e317c4b81878ea2"
+  },
+  "src/components/BoletinAlba.jsx": {
+    "mtime": 1782162547.4659326,
+    "ast_hash": "39ebfe88dc2095fb308cb0386e4dee30",
+    "semantic_hash": "39ebfe88dc2095fb308cb0386e4dee30"
+  },
+  "src/components/Codice.jsx": {
+    "mtime": 1783582692.690027,
+    "ast_hash": "f0197f4a0c50d12ef024311ee8073baf",
+    "semantic_hash": "f0197f4a0c50d12ef024311ee8073baf"
+  },
+  "src/components/ElMundo.jsx": {
+    "mtime": 1783582714.5779605,
+    "ast_hash": "f3743fe63405f825fa96c7435cf6420a",
+    "semantic_hash": "f3743fe63405f825fa96c7435cf6420a"
+  },
+  "src/components/Embers.jsx": {
+    "mtime": 1772716697.4586253,
+    "ast_hash": "3e12c4dfd018d83811b1eaa1c342b528",
+    "semantic_hash": "3e12c4dfd018d83811b1eaa1c342b528"
+  },
+  "src/components/EmbersTransition.jsx": {
+    "mtime": 1782287990.9680886,
+    "ast_hash": "38e3443aa388a809ff424ab915178ae5",
+    "semantic_hash": "38e3443aa388a809ff424ab915178ae5"
+  },
+  "src/components/Footer.jsx": {
+    "mtime": 1782894325.959792,
+    "ast_hash": "a6bfcf6757720e89af44d4317ee5b12e",
+    "semantic_hash": "a6bfcf6757720e89af44d4317ee5b12e"
+  },
+  "src/components/GoldRule.jsx": {
+    "mtime": 1782162963.2611947,
+    "ast_hash": "991cfb7eb7cc93fb6b97185d29a3c49f",
+    "semantic_hash": "991cfb7eb7cc93fb6b97185d29a3c49f"
+  },
+  "src/components/Hero.jsx": {
+    "mtime": 1782285560.9462986,
+    "ast_hash": "53321f59dced839c4a72bb4b4862a106",
+    "semantic_hash": "53321f59dced839c4a72bb4b4862a106"
+  },
+  "src/components/Icons.jsx": {
+    "mtime": 1782162121.4590936,
+    "ast_hash": "fd228209f87f6738e017bc7052b62ce0",
+    "semantic_hash": "fd228209f87f6738e017bc7052b62ce0"
+  },
+  "src/components/Layout.jsx": {
+    "mtime": 1782288022.954273,
+    "ast_hash": "5906109b95ebcad70de5adcac1493900",
+    "semantic_hash": "5906109b95ebcad70de5adcac1493900"
+  },
+  "src/components/LeyLines.jsx": {
+    "mtime": 1782144897.5800986,
+    "ast_hash": "e300f062e5c978597386fde7874f4845",
+    "semantic_hash": "e300f062e5c978597386fde7874f4845"
+  },
+  "src/components/LosPersonajes.jsx": {
+    "mtime": 1782285616.4779925,
+    "ast_hash": "4bde0a0198089148df6d80f46306ed5f",
+    "semantic_hash": "4bde0a0198089148df6d80f46306ed5f"
+  },
+  "src/components/NavBar.jsx": {
+    "mtime": 1782285553.5768147,
+    "ast_hash": "9e13aa2c8d7b043f97e6554dd9551199",
+    "semantic_hash": "9e13aa2c8d7b043f97e6554dd9551199"
+  },
+  "src/components/PageTransition.jsx": {
+    "mtime": 1782288006.817704,
+    "ast_hash": "82bc21e5567475b6afbb6ce87e0d8922",
+    "semantic_hash": "82bc21e5567475b6afbb6ce87e0d8922"
+  },
+  "src/components/Reveal.jsx": {
+    "mtime": 1781103669.7217247,
+    "ast_hash": "49f17583db9793e6ae47fcc5585d26df",
+    "semantic_hash": "49f17583db9793e6ae47fcc5585d26df"
+  },
+  "src/components/SectionTag.jsx": {
+    "mtime": 1782162210.9124312,
+    "ast_hash": "0e0f41ed1a393346fafe778f1e388aef",
+    "semantic_hash": "0e0f41ed1a393346fafe778f1e388aef"
+  },
+  "src/hooks/useReveal.js": {
+    "mtime": 1781096467.5743577,
+    "ast_hash": "0e9e587013ae3e61c1b53d34e965d16c",
+    "semantic_hash": "0e9e587013ae3e61c1b53d34e965d16c"
+  },
+  "src/hooks/useSpotlight.js": {
+    "mtime": 1782135879.1206872,
+    "ast_hash": "f3e6eafbb00d4f1fe3030c9e8f675ccf",
+    "semantic_hash": "f3e6eafbb00d4f1fe3030c9e8f675ccf"
+  },
+  "src/main.jsx": {
+    "mtime": 1772268942.8279586,
+    "ast_hash": "fbc0e2aff1e40ac356dafee4d6fec355",
+    "semantic_hash": "fbc0e2aff1e40ac356dafee4d6fec355"
+  },
+  "src/pages/Arkenor.jsx": {
+    "mtime": 1782285597.9690251,
+    "ast_hash": "cdfe373447ec1e97d08e43efda9d72f0",
+    "semantic_hash": "cdfe373447ec1e97d08e43efda9d72f0"
+  },
+  "src/pages/CodicePage.jsx": {
+    "mtime": 1782285516.612094,
+    "ast_hash": "f51797243d7ebeaeba49338cc50df78d",
+    "semantic_hash": "f51797243d7ebeaeba49338cc50df78d"
+  },
+  "src/pages/Heroes.jsx": {
+    "mtime": 1782285518.864956,
+    "ast_hash": "6cf94da3cef16979e53b4c2c913b55d7",
+    "semantic_hash": "6cf94da3cef16979e53b4c2c913b55d7"
+  },
+  "src/pages/Inicio.jsx": {
+    "mtime": 1782285534.590157,
+    "ast_hash": "413867105d0e1d11151345f271b2ee06",
+    "semantic_hash": "413867105d0e1d11151345f271b2ee06"
+  },
+  "src/pages/Meibel.jsx": {
+    "mtime": 1782285604.0461633,
+    "ast_hash": "e4d2c73bacf896c2372ee99784ce987f",
+    "semantic_hash": "e4d2c73bacf896c2372ee99784ce987f"
+  },
+  "src/pages/Mundo.jsx": {
+    "mtime": 1782285514.1478515,
+    "ast_hash": "615c43e081f2bb58653c08a9678094fc",
+    "semantic_hash": "615c43e081f2bb58653c08a9678094fc"
+  },
+  "src/pages/NotFound.jsx": {
+    "mtime": 1782285628.1246357,
+    "ast_hash": "0453217fe9ad254c413fe6343a4ad587",
+    "semantic_hash": "0453217fe9ad254c413fe6343a4ad587"
+  },
+  "src/pages/Pirocles.jsx": {
+    "mtime": 1782285610.728918,
+    "ast_hash": "b8791906052d0488e2eecf811067450f",
+    "semantic_hash": "b8791906052d0488e2eecf811067450f"
+  },
+  "src/pages/Vigilia.jsx": {
+    "mtime": 1782285521.0193777,
+    "ast_hash": "1c8f1b48d94efecfc18613f12701a4ca",
+    "semantic_hash": "1c8f1b48d94efecfc18613f12701a4ca"
+  },
+  "vite.config.js": {
+    "mtime": 1773163371.3953702,
+    "ast_hash": "493d470bca6b28f69b1cce2abb44c22d",
+    "semantic_hash": "493d470bca6b28f69b1cce2abb44c22d"
+  }
+}

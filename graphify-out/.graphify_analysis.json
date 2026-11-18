@@ -1,0 +1,243 @@
+{
+  "communities": {
+    "0": [
+      "package",
+      "package_dependencies",
+      "package_dependencies_framer_motion",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_react_router_dom",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_preview",
+      "package_type",
+      "package_version"
+    ],
+    "1": [
+      "src_components_codice",
+      "src_components_codice_capitulos",
+      "src_components_codice_codice",
+      "src_components_elmundo",
+      "src_components_elmundo_elmundo",
+      "src_components_icons",
+      "src_components_icons_icondiamond",
+      "src_components_icons_iconseal",
+      "src_components_icons_iconstar",
+      "src_components_icons_iconswords",
+      "src_components_sectiontag",
+      "src_components_sectiontag_sectiontag",
+      "src_pages_mundo",
+      "src_pages_mundo_mundo"
+    ],
+    "2": [
+      "src_app",
+      "src_app_app",
+      "src_components_lospersonajes",
+      "src_components_lospersonajes_lospersonajes",
+      "src_main",
+      "src_pages_arkenor_arkenor",
+      "src_pages_codicepage",
+      "src_pages_codicepage_codicepage",
+      "src_pages_heroes",
+      "src_pages_heroes_heroes",
+      "src_pages_meibel_meibel",
+      "src_pages_notfound_notfound",
+      "src_pages_pirocles_pirocles"
+    ],
+    "3": [
+      "src_components_emberstransition",
+      "src_components_emberstransition_emberstransition",
+      "src_components_emberstransition_generateparticles",
+      "src_components_footer",
+      "src_components_footer_footer",
+      "src_components_layout",
+      "src_components_layout_layout",
+      "src_components_navbar",
+      "src_components_navbar_navbar",
+      "src_components_pagetransition",
+      "src_components_pagetransition_contentvariants",
+      "src_components_pagetransition_pagetransition",
+      "src_components_pagetransition_veilvariants"
+    ],
+    "4": [
+      "src_components_embers",
+      "src_components_embers_embers",
+      "src_components_embers_generateparticles",
+      "src_components_embers_particles",
+      "src_components_hero",
+      "src_components_hero_hero",
+      "src_components_leylines",
+      "src_components_leylines_leylines",
+      "src_components_leylines_lineas",
+      "src_components_leylines_nodos",
+      "src_pages_inicio",
+      "src_pages_inicio_inicio"
+    ],
+    "5": [
+      "src_components_goldrule",
+      "src_components_goldrule_goldrule",
+      "src_components_reveal",
+      "src_components_reveal_reveal",
+      "src_hooks_usereveal",
+      "src_hooks_usereveal_prefersreducedmotion",
+      "src_hooks_usereveal_usereveal",
+      "src_pages_arkenor",
+      "src_pages_meibel",
+      "src_pages_notfound",
+      "src_pages_pirocles"
+    ],
+    "6": [
+      "package_devdependencies",
+      "package_devdependencies_eslint",
+      "package_devdependencies_eslint_js",
+      "package_devdependencies_eslint_plugin_react_hooks",
+      "package_devdependencies_eslint_plugin_react_refresh",
+      "package_devdependencies_globals",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_vite",
+      "package_devdependencies_vitejs_plugin_react"
+    ],
+    "7": [
+      "src_components_boletinalba",
+      "src_components_boletinalba_boletinalba",
+      "src_components_boletinalba_rationale_26",
+      "src_components_codice_entradacard",
+      "src_hooks_usespotlight",
+      "src_hooks_usespotlight_usespotlight",
+      "src_pages_vigilia",
+      "src_pages_vigilia_vigilia"
+    ],
+    "8": [
+      "eslint_config"
+    ],
+    "9": [
+      "vite_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.13333333333333333,
+    "1": 0.25274725274725274,
+    "2": 0.20512820512820512,
+    "3": 0.21794871794871795,
+    "4": 0.21212121212121213,
+    "5": 0.43636363636363634,
+    "6": 0.2,
+    "7": 0.35714285714285715,
+    "8": 1.0,
+    "9": 1.0
+  },
+  "gods": [
+    {
+      "id": "src_components_reveal_reveal",
+      "label": "Reveal()",
+      "degree": 11
+    },
+    {
+      "id": "src_components_sectiontag_sectiontag",
+      "label": "SectionTag()",
+      "degree": 6
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 5
+    },
+    {
+      "id": "src_components_goldrule_goldrule",
+      "label": "GoldRule()",
+      "degree": 5
+    },
+    {
+      "id": "src_hooks_usespotlight_usespotlight",
+      "label": "useSpotlight()",
+      "degree": 5
+    },
+    {
+      "id": "src_components_icons_iconstar",
+      "label": "IconStar()",
+      "degree": 4
+    },
+    {
+      "id": "src_hooks_usereveal_usereveal",
+      "label": "useReveal()",
+      "degree": 4
+    },
+    {
+      "id": "src_components_boletinalba_boletinalba",
+      "label": "BoletinAlba()",
+      "degree": 3
+    },
+    {
+      "id": "src_components_codice_codice",
+      "label": "Codice()",
+      "degree": 3
+    },
+    {
+      "id": "src_components_emberstransition_emberstransition",
+      "label": "EmbersTransition()",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "EntradaCard()",
+      "target": "useSpotlight()",
+      "source_files": [
+        "src/components/Codice.jsx",
+        "src/hooks/useSpotlight.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "peripheral node `EntradaCard()` unexpectedly reaches hub `useSpotlight()`"
+    },
+    {
+      "source": "BoletinAlba()",
+      "target": "useSpotlight()",
+      "source_files": [
+        "src/components/BoletinAlba.jsx",
+        "src/hooks/useSpotlight.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "Reveal()",
+      "target": "useReveal()",
+      "source_files": [
+        "src/components/Reveal.jsx",
+        "src/hooks/useReveal.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `Reveal()` connect `Reveal.jsx` to `Codice.jsx`, `App.jsx`, `Hero.jsx`, `BoletinAlba.jsx`?",
+      "why": "High betweenness centrality (0.059) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `devDependencies` connect `devDependencies` to `package.json`?",
+      "why": "High betweenness centrality (0.037) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `name`, `private`, `version` to the rest of the system?",
+      "why": "27 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `package.json` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected."
+    }
+  ]
+}
